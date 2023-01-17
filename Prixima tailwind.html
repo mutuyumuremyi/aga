@@ -3,6 +3,22 @@
 
 <head>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          sans: ['Inter', 'sans-serif'],
+        },
+      }
+    }
+  }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
     <body>
 
 
@@ -30,29 +46,81 @@
           <div class="p-8 text-bg-gray-500 font-normal  " >Equipe</div>
           <div class="p-8 text-bg-gray-500  font-normal  " >Commentaire</div>
           <div class="p-8 text-bg-gray-500 font-normal  " >Blog</div>
-        <button type="bottom " class= " bg-orange-600  ps-3 " >Contacter</button >
+           <button type="bottom " class= " bg-orange-600 m-4 px-6 rounded-lg " >Contacter</button >
             
         </div>
     </div>
         </div>
         </div>
      </div>
-     <div class="container  max-auto px-20">
+     <div class="container  max-auto px-20 ">
            
-  
-<div class="p-8"style="background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/041.webp');height: 700px;">
-
-    <div class="flex justify-center items-center h-full">
-        <div class="text-white">
-          <h2 class="font-semibold  text-center text-4xl mb-4">Desinge Concu Pour La Professionels</h2>
-          <h4 class="font-semibold text-center text-7xl mb-6">NOUS<br> CREONS DES EXPERIENCES NUMERIQUES</h4>
-          <button type="bottom " class= " border-l-5  align-items-center  pt-5  bg-orange-500  font-semibold  text-white-rgb-255  text-slate-200 hover:text-white-800 " > commencer</button> 
-          <button type="bottom " class= " border-l-5 action pt-5  font-semibold  text-white-rgb-255  text-slate-200 hover:text-white-800 " > Notre Travail</button> 
-          <button type="button" class="l-5 w-16 text-sm : shadow-sm hover:bg-orange-600">suivant</button>
-        </div> 
-     </div>
+      <div id="carouselExampleIndicators" class="carousel slide relative" data-bs-ride="carousel">
+        <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner relative w-full overflow-hidden">
+          <div class="carousel-item active float-left w-full">
+            <img
+              src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp"
+              class="block w-full"
+              alt="Wild Landscape"
+            />
+          </div>
+          <div class="carousel-item float-left w-full">
+            <img
+              src="about (3).png"
+              class="block w-full"
+              alt="Camera"
+            />
+          </div>
+          <div class="carousel-item float-left w-full">
+            <img
+              src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp"
+              class="block w-full"
+              alt="Exotic Fruits"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-    </div>
+      <img src="img/icon2.png" alt="">
 
 
 
@@ -60,7 +128,7 @@
     <div class="border-r-10  my-4">
         <div class=" flex w-76 ">
             <div class="w-1/2">
-          <div class="flex ">
+          <div class="flex p-8">
 <img src="./icon6.png">
 <div class=" pb-8 ">
     <h6  class="font-bold  p-3">Le marketing numérique</h6>
@@ -68,7 +136,7 @@
 </div> 
 </div>
 
-<!-- marketing -->
+
 <div class="flex p-8 ">
 <img src="./icon5.png">
 <div class=" pb-8">
@@ -96,11 +164,11 @@
 </div>
 </di>
 </div>
+ </div>   
 
-    
-
-  <div class= "w-76 container mx-auto px-20 bg-orange-600">
-    <div class="grid grid-cols-4 gap-0">
+  <div class= "">
+    <div class="bg-contain " style=" background-image : url(project2.jpg)">
+    <div class=" w-76 mx-auto px-20  grid grid-cols-4 gap-0 bg-orange-500 bg-opacity-80 py-8">
         <div class="">
             <h1 class= " text-6xl text-white-rgb-255  text-slate-200 hover:text-white-800 font-bold">90K+</h1>
             <p class="mb-0  text-white-rgb-255  text-slate-200 hover:text-white-800  ">Clients heureux</p>
@@ -125,46 +193,316 @@
      </div> 
          </div>
 
-
-
-            <div class= "w-76 container mx-auto px-20">
-                <div class="d-flex align-items-center p-8">
-              <div class="line-r-10 line-bg-gray-100">
-                <h5 class=" text-center text--500  ">NOS SERVICES</h5>
-              </div>
-                <p class=" text-4xl text-center font-bold">Que faisons-nous ?</p>
+    <div class= "w-76 container mx-auto px-20">
+     <div class="d-flex align-items-center p-8">
+    <div class="line-r-10 line-bg-gray-100">
+  <h5 class=" text-center text--500  ">NOS SERVICES</h5>
+   </div>
+  <p class=" text-4xl text-center font-bold">Que faisons-nous ?</p>
             
-                <p class="  text-center ">Contrairement à la croyance populaire, 
-                    le Lorem Ipsum n'est pas <br>simplement un texte aléatoire.
-                     Il a des racines dans un morceau de <br>littérature 
-                     latine classique de 45 avant JC, ce qui en fait plus de 2000 ans </p>
+   <p class="  text-center ">Contrairement à la croyance populaire, 
+   le Lorem Ipsum n'est pas <br>simplement un texte aléatoire.
+  Il a des racines dans un morceau de <br>littérature 
+ latine classique de 45 avant JC, ce qui en fait plus de 2000 ans </p>
             
-                <div class ="w-76 container mx-auto px-20: bg-w-800">
+ <div class ="w-76 container mx-auto px-20: bg-w-800">
             
-                  <div class="grid grid-cols-3 gap-4 flex-row-3 ">   
+   <div class="grid grid-cols-3 gap-4 flex-row-3 ">   
                   
-                    <div class= "bg-white shadow-md hover:bg-white-255 mx-3 my-4 p-5">
-                      <img src="./icon1.png">
-                      
-                      <h1 class="font-bold">  Le marketing numérique  </h1>
+  <div class= "bg-white shadow-md hover:bg-white-255 mx-3 my-4 p-5 ">
+   <img src="./icon1.png  " alt="">
 
-                     <p class=" ">Contrairement à la croyance populaire, 
-                        le Lorem<br> Ipsum n'est pas simplement un texte aléatoire.
-                         Il a<br> ses racines dans un morceau de littérature latine classique de  </p> 
-                        
-                        </div>
+   <h1 class="font-bold">  Le marketing numérique  </h1>
+   <p class=" ">Contrairement à la croyance populaire, 
+     le Lorem<br> Ipsum n'est pas simplement un texte aléatoire.
+     Il a<br> ses racines dans un morceau de littérature latine classique de  </p> 
+       </div>
                   
-                        </div> 
-                      </div>
-                    </div>
-            </div>
-
-           
+    <div class= "bg-white shadow-md hover:bg-white-255 mx-3 my-4 p-5 ">
+      <div class="item center">
+      </div>
+     <img src= "./icon2.png"> 
+      <h1 class="font-bold">  Logo Designing</h1>
+        <p class=" ">Contrairement à la croyance populaire, 
+         le Lorem<br> Ipsum n'est pas simplement un texte aléatoire.
+         Il a<br> ses racines dans un morceau de littérature latine classique de  </p> 
           </div>
-        </div>
+                 
+               
+          <div class= "bg-white shadow-md hover:bg-white-255 mx-3 my-4 p-5 ">
+            <img src="./icon2.png">
+             <h1 class="font-bold">  Logo Designing</h1>
+               <p class=" ">Contrairement à la croyance populaire, 
+                le Lorem<br> Ipsum n'est pas simplement un texte aléatoire.
+                Il a<br> ses racines dans un morceau de littérature latine classique de  </p> 
+                 </div>
+                        
+               
+                 <div class= "bg-white shadow-md hover:bg-white-255 mx-3 my-4 p-5 ">
+                  <img src="./icon3.png">
+                   <h1 class="font-bold">  Logo Designing</h1>
+                     <p class=" ">Contrairement à la croyance populaire, 
+                      le Lorem<br> Ipsum n'est pas simplement un texte aléatoire.
+                      Il a<br> ses racines dans un morceau de littérature latine classique de  </p> 
+                       </div> 
+                       
+                       
+                 <div class= "bg-white shadow-md hover:bg-white-255 mx-3 my-4 p-5 ">
+                  <img src="./icon2.png">
+                   <h1 class="font-bold text-sm">  Logo Designing</h1>
+                     <p class=" ">Contrairement à la croyance populaire, 
+                      le Lorem<br> Ipsum n'est pas simplement un texte aléatoire.
+                      Il a<br> ses racines dans un morceau de littérature latine classique de  </p> 
+                       </div> 
+
+         
+                       <div class= "bg-white shadow-md hover:bg-white-255 mx-3 my-4 p-5 ">
+                        <img src="./icon2.png">
+                         <h1 class="font-bold">  Logo Designing</h1>
+                           <p class=" ">Contrairement à la croyance populaire, 
+                            le Lorem<br> Ipsum n'est pas simplement un texte aléatoire.
+                            Il a<br> ses racines dans un morceau de littérature latine classique de  </p> 
+                             </div>
+                               </div>  
+                               </div> 
+
+    <div class= "w-76 container mx-auto px-20">
+      <div class="d-flex align-items-center p-8">
+    <div class="line-r-10 line-bg-gray-100">
+    <h5 class=" text-center text--500  ">WORK</h5>
+    </div>
+   <p class=" text-4xl text-center font-bold">Successful projects ?</p>
+                                     
+     <p class="  text-center ">Contrary to popular belief, Lorem Ipsum is not simply random text. 
+      It has <br>roots in a piece of classical Latin literature from 45 BC, making it over <br>2000 years old </p>
+          </div>
+
+
+<div class="w-76 container mx-auto px-20 ">
+
+  <div class="carousel-inner relative w-full overflow-hidden ">
+ 
+    <div class="carousel-item active relative float-left w-full ">
+      <img  src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(19).webp"
+        class="block w-full"
+        alt="Motorbike Smoke"
+      />
+      <div class="carousel-caption hidden md:block absolute text-center">
+        <h5 class="text-3xl">Consultating marketing</h5>
+        <p>Web Design.</p>
+      </div>
+    </div>
+
+  </div>
+  </div>
+  
+  <button
+    class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+    type="button"
+    data-bs-target="#carouselDarkVariant"
+    data-bs-slide="prev"
+  >
+    <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button
+    class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+    type="button"
+    data-bs-target="#carouselDarkVariant"
+    data-bs-slide="next"
+  >
+    <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
 
 
+
+
+
+        <div class=" w-76 container max-auto px-20">
+          <div class="d-flex align-items-center p-8">
+            <div class="line- line-bg-gray-100">
+                <h1 class=" text-center">TEAM </h1>
+                <h2 class=" text-center font-bold text-5xl">Team Members </h2>
+                <p class=" text-center ">Contrary to popular belief, Lorem Ipsum is not simply random text. 
+                  It has<br> roots in a piece of classical Latin literature from 45 BC, 
+                  making it over <br>2000 years old </p>
+              </div>
+            </div>
+        
+
+        <div class="grid- grid-cols-3 ">
+          <div class="flex shodow haver">
+             <div class= "bg-white shadow-md hover:bg-orange-600 mx-3 my-4 p-5">
+ <img src="./team_1.jpg">
+ <h1 class=" font-bold ">Marvin McKinney </h1>
+ <p>Marketing Coordinator</p>
+ </div>
+ <div class= "bg-white shadow-xl hover:bg-orange-600 mx-3 my-4 p-5">
+  <img src="./team_2.jpg">
+
+  <h1 class=" font-bold ">Marvin McKinney </h1>
+  <p>Marketing Coordinator</p>
+  </div>
+  <div class= "bg-white shadow-xl hover:bg-orange-600 mx-3 my-4 p-5">
+   
+  <img src="./team_3.jpg">
+  <h1 class=" font-bold ">Marvin McKinney </h1>
+  <p>Marketing Coordinator</p>  
+</div>
+</div>
+ </div>
+ </div>
+
+
+
+
+
+
+ <div class=" w-76 container max-auto px-20">
+  <div class="d-flex align-items-center p-8">  
+    <div  id="carouselDarkVariant" class="carousel slide carousel-fade carousel-dark relative" data-bs-ride="carousel" >
+   
+    <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
+      <button data-bs-target="#carouselDarkVariant"  data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" ></button>
+      <button data-bs-target="#carouselDarkVariant" data-bs-slide-to="1" aria-label="Slide 1" ></button>
+      <button data-bs-target="#carouselDarkVariant" data-bs-slide-to="2" aria-label="Slide 1"></button>
+    </div>
+
+    <div class="carousel-inner relative w-full overflow-hidden fixed">
+   
+      <div class="carousel-item active relative float-left w-full ">
+        <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(19).webp"class="block w-full" alt="Motorbike Smoke" />
+        <div class="carousel-caption hidden md:block absolute text-center">
+          
+          <div class="review">
+            <div class="person">
+
+          <img class="rounded- lg-5" src="./team_3 (1).jpg  "> 
+                <h class="font-bold">Ralph Edwards</h>
+                <h1 class="font-italic text-yellow-800">Market Development Manager</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut quis, rem culpa labore voluptate
+                ullam! In, nostrum. Dicta, vero nihil. Delectus minus vitae rerum voluptatum, excepturi incidunt ut,
+                enim nam exercitationem optio ducimus!</p>
+           </div>
+           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+        </div>
+      </div>
+    </div>
+</div>
+  </div>  
+ </div>
+
+
+
+
+ <div class= "w-76 container mx-auto px-20 p-8">
+  <div class="d-flex align-items-center p-8 w-76">
+ <div class="line-r-10 line-bg-gray-100">
+<h5 class=" text-center text--500  ">BLOG</h5>
+
+<p class=" text-4xl text-center font-bold">Blog Post ?</p>
+   <p class= " text-center "> Contrary to popular belief, Lorem Ipsum is not simply random text.
+           It has<br> roots in a piece of classical Latin literature from 45 BC,
+            making it over <br>2000 years old</p> 
+      </div>
+    
+
+
+ <div class ="w-76 container mx-auto px-20: bg-w-800">
+ <div class="grid grid-cols-4 gap-4 flex-row-3  ">   
+          
+       <div class= "bg-white">
+        <button type="bottom " class= " bg-orange-600 p-3  m-4 rounded-lg " >Web Design</button >
+      <img class="w-96" src="./project4 (1).jpg">
+
+      <small class="p-1"> 01 DEC, 2022</small>
+      <p class="font-bold p-2 "> Web Design trends in 2022</p>
+
+     <small class="p-2 inline "> Contrary to popular belief, Lorem Ipsum is 
+      not simply random text. 
+        It has roots
+         in a piece of classical Latin literature from </small>  
+ </div> 
+     
+
+  
+<div class= "bg-white">
+  <button type="bottom " class= " bg-orange-600 p-3  m-4 rounded-lg " >Programming</button >
+<img class="w-96" src="./project5 (1).jpg">
+
+<small class="p-1"> 01 DEC, 2022</small>
+<p class="font-bold p-2 "> Web Design trends in 2022</p>
+
+<small class="p-2 inline "> Contrary to popular belief, Lorem Ipsum is 
+not simply random text. 
+  It has roots
+   in a piece of classical Latin literature from </small>  
+</div> 
+
+
+ 
+<div class= "bg-white">
+  <button type="bottom " class= " bg-orange-600 p-3  m-4 rounded-lg " >Marketing</button >
+
+    
+<img class="w-96" src="./project5 (1).jpg">
+
+
+
+<small class="p-1"> 01 DEC, 2022</small>
+<p class="font-bold p-2 "> Web Design trends in 2022</p>
+
+<small class="p-2 inline "> Contrary to popular belief, Lorem Ipsum is 
+not simply random text. 
+  It has roots
+   in a piece of classical Latin literature from </small>  
+</div> 
+</div>
+</div>
+</div>
+</div>
+</div>      
+
+
+
+
+<div class ="w-76 container mx-auto px-20: bg-w-800 bg-gray-900">   
+
+      <div class="d-flex align-items-center p-8 w-76">
+     <div class="line-r-10 line-bg-gray-100">
+    <h5 class=" text-center text-white-rgb-255   text-slate-200 hover:text-white-200 text-4xl text-center font-bold ">PRIXMA.</h5>
+    
+       <p class= "text-sm text-white-rgb-255   text-slate-50 hover:text-white-50  text-center "> Contrary to popular belief, 
+        Lorem Ipsum is not simply random text. It has roots in a piece of <br>classical Latin literature from</p>
+
+
+        <div class="text-center ">
+          
+        <div class="grid grid-cols-4  "> 
+
+          <p><a class="   " ></a><i class="p-3  bg-white shadow-md hover:bg-orange-500   text-rg-gray-500 rounded-sm  text-slate-50 hover:text-white-50  fab fa-twitter"></i></a></p> 
+          <p> <a class="  "></a><i class=" p-3 bg-white shadow-md hover:bg-orange-600   text-white-rgb-255  rounded-lg text-slate-200 hover:text-white-800  fab fa-facebook-f"></i></a></p> 
+          <p>  <a class="   "></a> <i class= " p-3 bg-white shadow-md hover:bg-orange-600 text-white-rgb-255 rounded-lg  text-slate-200 hover:text-white-800  fab fa-youtube"></i></a></p> 
+          <p> <a class=" " ></a><i class=" p-3 bg-white shadow-md hover:bg-orange-600 text-white-rgb-255  rounded-lg text-slate-200 hover:text-white-800  fab fa-linkedin-in"></i></a></p> 
+       </div>
+ </div>
+ <div class="container mx-auto w-56 text-center text-center text-white-rgb-255   text-slate-200 hover:text-white-200  text-center  ">
+  <a href="#">privacy</a>
+  <a href="#">terms</a>
+  <a href="#">disclaimer</a>
+</div>
+<a hrefs=  "https://themewagon.com">ThemeWagon</a>
+
+
+          </div>
+        
+    
 
 </body>
 </html>
